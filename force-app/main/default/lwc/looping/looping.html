@@ -1,0 +1,30 @@
+<template>    
+    <lightning-card title="Car Brands using for:each">        
+            <div class="slds-var-m-around_medium">
+                <template for:each={brandList} for:item="car">
+                    <ul key={car} class="slds-has-dividers_around">
+                        <li  class="slds-item">{car}</li>                       
+                      </ul>
+                </template>
+            </div>
+    </lightning-card>
+
+    <lightning-card title="Global Ceo's using iterator" class="slds-var-m-around_medium">        
+        <div class="slds-var-m-around_medium">
+            <template iterator:ceo={ceoList}>
+                <ul key={ceo.value.id} class="slds-has-dividers_around">
+                    <template if:true={ceo.first}>
+                        <div class="slds-box slds-theme_shade">
+                            <strong>List of Companies with their CEOs</strong>
+                        </div>
+                    </template>
+                    
+                    <li  class="slds-item">
+                      <strong>{ceo.value.company}-</strong>  
+                      <strong>{ceo.value.name}</strong>
+                    </li>                       
+                  </ul>
+            </template>
+        </div>
+</lightning-card>
+</template>

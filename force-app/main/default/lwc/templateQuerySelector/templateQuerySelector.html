@@ -3,8 +3,10 @@
         <div class="slds-var-m-around_medium">
             <h1>Hello, Welcome to Query Selector</h1>
             <template for:each={brands} for:item="brand">
-                <div key={brand} class="name"><strong>{brand}</strong></div>
+                <div key={brand} class="name">{brand}</div>
             </template>
+            <div class="child" lwc:dom="manual"></div>
+            <button onclick={fetchDetailHandler}>Fetch details</button>
         </div>
     </lightning-card>
 </template>

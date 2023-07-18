@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Template Query Selector">
+        <div class="slds-var-m-around_medium">
+            <h1>Hello, Welcome to Query Selector</h1>
+            <template for:each={brands} for:item="brand">
+                <div class="name"><strong>{brand}</strong></div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

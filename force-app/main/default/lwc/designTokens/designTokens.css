@@ -1,0 +1,4 @@
+p{
+    color:var(--lwc-brandBackgroundPrimary);
+    background-color: var(--lwc-colorBackgroundAltInverse);    
+}

@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Unmounting Parent Component">
+        <div class="slds-var-m-around_medium">
+            <template if:true={isChildVisible}>
+                <button class="slds-button slds-button_outline-brand" 
+            onclick={toggleChildHandler}>Show Child</button>
+            </template>
+
+            <template if:false={isChildVisible}>
+                <button class="slds-button slds-button_outline-brand" 
+            onclick={toggleChildHandler}>Remove Child</button>
+            </template>
+            
+            <template if:false={isChildVisible}>
+                <c-unmounting-life-cycle-child></c-unmounting-life-cycle-child>
+            </template>
+        </div>
+    </lightning-card>
+</template>

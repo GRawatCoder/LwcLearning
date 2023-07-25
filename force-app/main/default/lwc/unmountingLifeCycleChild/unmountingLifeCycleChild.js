@@ -1,0 +1,18 @@
+import { LightningElement } from 'lwc';
+
+export default class UnmountingLifeCycleChild extends LightningElement {
+    constructor(){
+        super();
+        console.log("child constructor called");
+    }
+    connectedCallback(){
+        console.log("child component connected callback");
+    }
+    renderedCallback(){
+        console.log("child component rendered callback");
+    }
+    disconnectedCallback(){
+        alert("child is getting removed from DOM");
+        console.log("child component disconnected callback");
+    }
+}

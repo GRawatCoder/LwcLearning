@@ -2,7 +2,7 @@ import { LightningElement } from 'lwc';
 
 export default class UnmountingLifeCycleParent extends LightningElement {
     isChildVisible = false;
-    
+
     constructor(){
         super();
         console.log("parent constructor called");
@@ -20,5 +20,10 @@ export default class UnmountingLifeCycleParent extends LightningElement {
 
     toggleChildHandler(){
         this.isChildVisible = !this.isChildVisible;
+    }
+
+    errorCallback(error,stack){
+        console.log('PARENT'+error.message);
+        console.log('PARENT'+stack);
     }
 }

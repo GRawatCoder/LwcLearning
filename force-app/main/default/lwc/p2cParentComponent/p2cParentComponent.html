@@ -11,4 +11,14 @@
     <c-p2c-carousel-component
     carousel-details={carouselData}>
     </c-p2c-carousel-component>
+
+    <div class="slds-var-m-bottom_medium"></div>
+
+    <lightning-input type="number" name="input2" 
+    label="Number field with a predefined value" 
+    value={percentageValue} onkeyup={changeHandler}></lightning-input>
+
+    <c-p2c-progress-bar-component
+    progress-value={percentageValue}></c-p2c-progress-bar-component>
+    
 </template>

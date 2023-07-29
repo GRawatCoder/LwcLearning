@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="parent slot banner">
+        <c-child-banner-component>
+            <div slot="icon">
+                <lightning-icon icon-name="standard:portal" size="large"
+                alternative-text="Banner information"></lightning-icon>
+            </div>
+            <div slot="title" class="slds-text-heading_small">
+                <strong>Salesforce MFA Roll-out</strong>
+                <div>Webinar: 03/06/2022, 7PM</div>
+            </div>
+            <div slot="message">
+                We will discuss what MFA is and the benefits it brings.
+            </div>     
+        </c-child-banner-component>
+        <c-child-banner-component>
+            <div slot="icon">
+                <lightning-icon icon-name="action:new_opportunity" size="small"
+                alternative-text="Banner information"></lightning-icon>
+            </div>
+            <div slot="title" class="slds-text-heading_small
+                        slds-align_absolute-center slds-text-color_success">
+                <em>New high-value Opportunity won!</em>
+            </div>
+            <div slot="message" class="slds-align_absolute-center">
+                Congratulations on closing a high-value opportunity.
+            </div>     
+        </c-child-banner-component>
+    </lightning-card>
+</template>

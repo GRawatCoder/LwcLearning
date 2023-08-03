@@ -1,6 +1,7 @@
 import { LightningElement } from 'lwc';
 import MOMENT from '@salesforce/resourceUrl/moment';
-import {loadScript} from 'lightning/platformResourceLoader';
+import ANIMATE from '@salesforce/resourceUrl/animate';
+import {loadScript, loadStyle} from 'lightning/platformResourceLoader';
 
 export default class ThirdPartyLibrary extends LightningElement {
     currentDate='';
@@ -8,7 +9,8 @@ export default class ThirdPartyLibrary extends LightningElement {
     renderedCallback(){
         if(this.isLibLoaded) return;
         Promise.all([
-            loadScript(this,MOMENT+'/moment/moment.min.js')
+            loadStyle(this,ANIMATE+'/animate/animate.min.css'),
+            loadScript(this,MOMENT+'/moment/moment.min.js')            
         ]).then(()=>{
             this.setDateOnWeb();
         }).catch(err=>{

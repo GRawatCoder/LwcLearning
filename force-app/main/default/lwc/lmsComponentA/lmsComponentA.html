@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Component A">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" 
+            onkeyup={inputHandler}
+            label="Type text to pass message using lms"></lightning-input>
+        </div>
+        <div class="slds-var-m-around_medium">
+            <lightning-button variant="success" label="Publish" onclick={publishHandler}></lightning-button>
+        </div>
+    </lightning-card>
+</template>

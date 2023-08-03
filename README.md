@@ -1,6 +1,6 @@
-# Salesforce DX Project: Next Steps
+# Salesforce LWC Learning
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+In this we will learn LWC topics and push the changes to remote repository.
 
 ## How Do You Plan to Deploy Your Changes?
 
@@ -12,7 +12,9 @@ The `sfdx-project.json` file contains useful configuration information for your 
 
 ## Read All About It
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce Lightning Web Component Guide](https://developer.salesforce.com/docs/platform/lwc/guide)
+- [Salesforce LWC RFP](https://rfcs.lwc.dev/rfcs/lwc/)
 - [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+- [Salesforce Component Library Guide](https://developer.salesforce.com/docs/component-library/overview/components)
+- [Salesforce LWC Crash Course](https://www.salesforcelightningweb.com/)
+- [Salesforce Lightning Design system Guide](https://www.lightningdesignsystem.com/)

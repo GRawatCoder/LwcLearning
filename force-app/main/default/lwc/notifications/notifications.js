@@ -1,7 +1,8 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 
 export default class Notifications extends LightningElement {
+    @api motoLabel;
     _title='write your title here...'
     message = 'your message here';
     variant = 'error';

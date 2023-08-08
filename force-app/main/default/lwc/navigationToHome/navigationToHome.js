@@ -3,10 +3,18 @@ import {NavigationMixin} from 'lightning/navigation';
 
 export default class NavigationToHome extends NavigationMixin(LightningElement) {
     navigateToHome(){
-        this[NavigateMixin.Navigate]({
-            type:'standard_namedPage',
+        this[NavigationMixin.Navigate]({
+            type:'standard__namedPage',
             attributes:{
                 pageName:'home'
+            }
+        });
+    }
+    navigateToChatter(){
+        this[NavigationMixin.Navigate]({
+            type:'standard__namedPage',
+            attributes:{
+                pageName:'chatter'
             }
         });
     }

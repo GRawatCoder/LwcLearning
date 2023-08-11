@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Get Picklist Values using wire">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+            name="OpportunityStages"
+            label="Stages"
+            value={stageValue}
+            placeholder="Select Opportunity Stages"
+            options={options}
+            onchange={handleChange} ></lightning-combobox>
+
+            <p>Selected value is: {stageValue}</p>
+            <template lwc:if={error}>
+                <p>{error}</p>
+              </template>
+        </div>
+    </lightning-card>
+</template>

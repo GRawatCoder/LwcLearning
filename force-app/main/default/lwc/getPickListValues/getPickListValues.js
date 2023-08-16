@@ -28,6 +28,15 @@ export default class GetPickListValues extends LightningElement {
     };
 
     setOpportunityComboboxData(stagePicklistValues){
+
+        /*
+            Another way to write this logic is-
+            const newPickListValues = stagePicklistValues.values.map((item)=>{
+                return {label:item.label, value:item.value};
+            });
+            return newPickListValues;
+        */
+
         return stagePicklistValues.values.map(item=>({
                 label:item.label,
                 value:item.value

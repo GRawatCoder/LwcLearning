@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Update Record with Data Table">
+        <div class="slds-var-m-around_medium">
+            <lightning-datatable
+                key-field="id"
+                data={data}
+                show-row-number-column
+                row-number-offset={rowOffset}                
+                draft-values={draftValues}
+                onsave={updateContactHandler}
+                columns={columns} hide-checkbox-column>
+            </lightning-datatable>
+        </div>        
+    </lightning-card>
+</template>
